@@ -1,0 +1,54 @@
+{
+  "name": "b2bstore-bigcommerce-adapter",
+  "version": "0.0.1",
+  "type": "module",
+  "main": "./dist/b2bstore-bigcommerce-adapter.umd.cjs",
+  "module": "./dist/b2bstore-bigcommerce-adapter.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/b2bstore-bigcommerce-adapter.js",
+      "require": "./dist/b2bstore-bigcommerce-adapter.umd.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "typescript": "^4.9.3",
+    "vite": "^4.0.0",
+    "vite-plugin-dts": "^1.7.1"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.7.3"
+  },
+  "peerDependencies": {
+    "@apollo/client": "^3.7.3"
+  },
+  "output": {
+    "globals": {
+      "@apollo/client": "ApolloClient"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jalvarez00/b2bstore-bigcommerce-adapter"
+  },
+  "keywords": [
+    "api",
+    "bigcommerce",
+    "b2bstore"
+  ],
+  "author": "Orienteed SLU",
+  "bugs": {
+    "url": "https://github.com/jalvarez00/b2bstore-bigcommerce-adapter/issues"
+  },
+  "homepage": "https://github.com/jalvarez00/b2bstore-bigcommerce-adapter#readme",
+  "license": "MIT"
+}
