@@ -4,7 +4,7 @@ export const GET_PRODUCTS = gql`
   query GetProducts {
     products(search: "ATTIC") {
       items {
-        id
+        uid
         name
         sku
         price_range {

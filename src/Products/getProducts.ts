@@ -8,9 +8,7 @@ const GetProducts = (client: ApolloClient<NormalizedCacheObject>) => {
     pollInterval: 0,
   })
 
-  if (loading) return { loading }
-  if (error) return { error }
-  return { data }
+  return { data, loading, error }
 }
 
 export default GetProducts
