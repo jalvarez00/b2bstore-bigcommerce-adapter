@@ -4,6 +4,7 @@ export const GET_PRODUCTS = gql`
   query GetProducts {
     products(search: "QUATRO") {
       items {
+        id
         uid
         name
         sku
